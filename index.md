@@ -4,24 +4,24 @@ title: Home
 language: en
 nav-order: 1
 ---
-<section>
 I am currently a Ph.D. candidate at
-<a href="https://math.dartmouth.edu/">Dartmouth College</a>
+[Dartmouth College](https://math.dartmouth.edu)
 working under the supervision of
-<a href="https://math.dartmouth.edu/~jvoight/">John Voight</a>.
-</section>
-<section>
+[John Voight](https://math.dartmouth.edu/~jvoight)
+
 Here is an updated version of my resume:
 <br>
-<a class="btn btn--gray" href="assets/musty_resume.pdf">Resume</a>
-</section>
-<section>
+[Resume](assets/musty_resume.pdf){:class="btn btn--gray"}
+
 Here is a poster describing some of my research:
 <br>
-<a class="btn btn--gray" href="assets/belyi_poster.pdf">Belyi Maps Poster</a>
-</section>
-<section>
+[Belyi Maps Poster](assets/belyi_poster.pdf){:class="btn btn--gray"}
+
 I have organized some of my research data at:
 <br>
-<a class="btn btn--gray" href="https://dessin-explorer.org">dessin-explorer.org</a>
-</section>
+[dessin explorer](https://dessin-explorer.org){:class="btn btn--gray"}
+
+<figure>
+  <img src="assets/acadia.jpg" style="max-width:100%;height:auto;">
+  <figcaption>Around Mountain Loop, Acadia</figcaption>
+</figure>
