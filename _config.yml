@@ -3,6 +3,6 @@ name:
 description: 
   en: Plugin-free multilanguage Jekyll websites
 footer:
-  en: An open-source project by [mrzool](http://mrzool.cc)
+  en:
 exclude: [README.md]
 permalink: pretty
