@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
-  <head> <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>{{ page.title }} | {{ site.name[page.language] }}</title>
+  <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <title>{{ page.title }} | {{ site.name[page.language] }}</title>
     <meta name="author" content="michaelmusty">
     <meta name="description" content="{{ site.description[page.language] }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +19,17 @@
       {% endfor %}
     </nav>
     <header>
-      <h1>{{ site.name[page.language] }}</h1>
+      <h1>
+        {% raw %}{{% endraw %}
+        {{ site.name[page.language] }}
+        {% raw %}}{% endraw %}
+        {% raw %}{{% endraw %}
+        {{ page.title }}
+        {% raw %}}{% endraw %}
+      </h1>
+      <!--
       <p>{{ site.description[page.language] }}</p>
+      -->
     </header>
     <main>
       {{ content }}
