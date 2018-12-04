@@ -21,6 +21,14 @@ I have organized some of my research data at:
 <br>
 [dessin explorer](https://dessin-explorer.org){:class="btn btn--gray"}
 
+Here are some of my professional academic resources:
+<br>
+[Research Statement](https://www.dropbox.com/s/z79kwoodj1b7zjf/research.pdf?dl=0){:class="btn btn--gray"}
+<br>
+[Teaching Statement](https://www.dropbox.com/s/xk3tytbb89n03nz/teaching-statement.pdf?dl=0){:class="btn btn--gray"}
+<br>
+[Publication List](https://www.dropbox.com/s/h51dqlbnkjupb57/musty_publication_list.pdf?dl=0){:class="btn btn--gray"}
+
 <figure>
   <!--
   <img src="assets/acadia.jpg" class="center" style="max-width:100%;height:auto;">
