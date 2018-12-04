@@ -27,5 +27,5 @@ I have organized some of my research data at:
   <figcaption>Around Mountain Loop, Acadia</figcaption>
   -->
   <img src="assets/mont_blanc.jpg" class="center" style="max-width:100%;height:auto;">
-  <figcaption>Col de Balme, CH/FR</figcaption>
+  <figcaption>Col de Balme, CH/FR (September 2017)</figcaption>
 </figure>
