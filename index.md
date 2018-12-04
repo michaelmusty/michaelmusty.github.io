@@ -11,7 +11,7 @@ working under the supervision of
 
 Here is an updated version of my resume:
 <br>
-[Resume](assets/musty_resume.pdf){:class="btn btn--gray"}
+[Resume](assets/musty_resume.pdf){:class="btn btn--gray center"}
 
 Here is a poster describing some of my research:
 <br>
