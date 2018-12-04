@@ -6,3 +6,5 @@ footer:
   en: made with [polyglot-jekyll](https://github.com/mrzool/polyglot-jekyll)
 exclude: [README.md]
 permalink: pretty
+plugins:
+  - jemoji
