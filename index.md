@@ -27,5 +27,5 @@ I have organized some of my research data at:
   <figcaption>Around Mountain Loop, Acadia</figcaption>
   -->
   <img src="assets/mont_blanc.jpg" class="center" style="max-width:100%;height:auto;">
-  <figcaption>I have been to Europe one time</figcaption>
+  <figcaption>The one time I was in Europe</figcaption>
 </figure>
