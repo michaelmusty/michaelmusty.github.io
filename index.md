@@ -22,6 +22,10 @@ I have organized some of my research data at:
 [dessin explorer](https://dessin-explorer.org){:class="btn btn--gray"}
 
 <figure>
+  <!--
   <img src="assets/acadia.jpg" class="center" style="max-width:100%;height:auto;">
   <figcaption>Around Mountain Loop, Acadia</figcaption>
+  -->
+  <img src="assets/mont_blanc.jpg" class="center" style="max-width:100%;height:auto;">
+  <figcaption>!</figcaption>
 </figure>
