@@ -131,7 +131,7 @@ nav-order: 2
   Belyi maps using power series expansions of modular forms.
   I implemented code to visualize Belyi maps as (equivalent) dessins d’enfants
   conformally embedded in the hyperbolic unit disk.
-  My code produced figures (such as the one below) drawn using
+  My code produced figures (such as the one at the top of this page) drawn using
   [PSTricks](http://tug.org/PSTricks/main.cgi/).
 
   Publication and other resources:
