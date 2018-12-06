@@ -5,6 +5,13 @@ language: en
 handle: /projects
 nav-order: 2
 ---
+<figure>
+  <img src="/assets/belyi1.png" class="center" style="max-width:100%;height:auto;">
+  <!--
+  <figcaption>above is a genus 1 dessin conformally embedded in the hyperbolic unit disk</figcaption>
+  -->
+</figure>
+
 <h3>2-Group Belyi Maps</h3>
   For my Ph.D. thesis I am studying
   Galois Belyi maps with monodromy group a 2-group.
@@ -146,9 +153,3 @@ nav-order: 2
   [arXiv](http://arxiv.org/abs/1311.2081)
   <br>
   [LMS article](/assets/belyi.pdf)
-  <figure>
-    <img src="/assets/belyi1.png" class="center" style="max-width:100%;height:auto;">
-    <!--
-    <figcaption>above is a genus 1 dessin conformally embedded in the hyperbolic unit disk</figcaption>
-    -->
-  </figure>
