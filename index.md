@@ -34,6 +34,9 @@ Here are some of my professional academic resources:
   <img src="assets/acadia.jpg" class="center" style="max-width:100%;height:auto;">
   <figcaption>Around Mountain Loop, Acadia</figcaption>
   -->
+  <!--
   <img src="assets/mont_blanc.jpg" class="center" style="max-width:100%;height:auto;">
   <figcaption>Col de Balme, CH/FR (September 2017)</figcaption>
+  -->
+  <img src="/assets/eva_picture.jpg" class="center" style="max-width:100%;height:auto;">
 </figure>
