@@ -14,6 +14,7 @@ nav-order: 1
   <figcaption>Col de Balme, CH/FR (September 2017)</figcaption>
   -->
   <img src="/assets/eva_picture.jpg" class="center" style="max-width:100%;height:auto;">
+  <figcaption>Photo courtesy of [Eva Kłejt](http://evainfeld.net/)</figcaption>
 </figure>
 
 I am currently a Ph.D. candidate at
