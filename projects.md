@@ -61,7 +61,7 @@ nav-order: 2
   [arXiv (in progress)]()
 
 <h3>A Database of Belyi Maps</h3>
-  In this paper, we compute a database of thousands or Belyi
+  In this paper, we compute a database of thousands of Belyi
   maps up to degree 9.
   On top of the group effort to compute an exhaustive list of Belyi
   maps, my main responsibility in this project was implementing the database
