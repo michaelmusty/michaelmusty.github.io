@@ -27,7 +27,7 @@ working under the supervision of
 
 Here is an updated version of my resume:
 <br>
-/* [Resume](https://www.dropbox.com/s/cn1q5q8ft6cpt04/musty_resume.pdf?dl=0){:class="btn btn--gray center"} */
+<!-- [Resume](https://www.dropbox.com/s/cn1q5q8ft6cpt04/musty_resume.pdf?dl=0){:class="btn btn--gray center"} -->
 [Resume](assets/musty_resume.pdf){:class="btn btn--gray center"}
 
 Here is a poster describing some of my research:
