@@ -45,3 +45,9 @@ Here are some of my professional academic resources:
 [Teaching Statement](https://www.dropbox.com/s/xk3tytbb89n03nz/teaching-statement.pdf?dl=0){:class="btn btn--gray"}
 <br>
 [Publication List](https://www.dropbox.com/s/h51dqlbnkjupb57/musty_publication_list.pdf?dl=0){:class="btn btn--gray"}
+
+I am also passionate about math visualizations and art.
+Here is a mathematical coloring book I made a couple years ago:
+<br>
+[cover](assets/cover.pdf){:class="btn btn--gray"}
+[pages](assets/pages.pdf){:class="btn btn--gray"}
