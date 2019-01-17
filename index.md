@@ -54,4 +54,4 @@ Here is a mathematical coloring book I made a couple years ago:
 
 Slides for my talk at the JMM January 19, 2019:
 <br>
-[JMM Slides](https://www.dropbox.com/s/vqgh4wbpo5t6tee/musty_jmm.pdf?dl=0){:class="btn btn--gray"}
+[JMM Slides](https://www.dropbox.com/s/5fdidyq7qshn6s9/musty_jmm.pdf?dl=0){:class="btn btn--gray"}
