@@ -125,6 +125,9 @@ nav-order: 2
   76.4 (2017) pp. 609-617. Elsevier, 2017
   <br>
   [JAAD article](http://www.jaad.org/article/S0190-9622(16)31166-5/fulltext)
+  [cost.R](/assets/cost.R)
+  [providers.R](/assets/providers.R)
+  [residents.R](/assets/residents.R)
 
 <h3>Numerical calculation of three-point branched covers of the projective line</h3>
   In this paper, we implement a general numerical method to compute
