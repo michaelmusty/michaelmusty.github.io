@@ -92,10 +92,12 @@ nav-order: 2
   [Jeroen Sijsling](https://jrsijsling.eu/), and
   [John Voight](https://math.dartmouth.edu/~jvoight/))
   <i>
-  to appear in conference proceedings for ANTS-XIII,
-  The Open Book Series 2 (2019).
+  Conference proceedings for ANTS-XIII,
+  The Open Book Series 2 (2019)
   </i>
   Mathematical Sciences Publishers, 2019
+  <br>
+  [Article](https://msp.org/obs/2019/2-1/p23.xhtml)
   <br>
   [arXiv](https://arxiv.org/abs/1805.07751)
   <br>
