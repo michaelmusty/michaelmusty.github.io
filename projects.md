@@ -19,11 +19,9 @@ nav-order: 2
   (and you are curious) take a look at my
   [poster on dessins d'enfants](/assets/belyi_poster.pdf).
 
-  Future talk on this topic:
+  Past talks on this topic:
   <br>
   [JMM Special Session on Number Theory, Arithmetic Geometry, and Computation](https://jointmathematicsmeetings.org/amsmtgs/2217_abstracts/1145-11-2469.pdf)
-
-  Past talk on this topic:
   <br>
   [Maine-Quebec Number Theory Conference](https://archimede.mat.ulaval.ca/MAINE-QUEBEC/mq17.html)
   <br>
@@ -36,9 +34,15 @@ nav-order: 2
   </i>
   (in progress)
   <br>
-  [github](https://github.com/michaelmusty/solvabledessins)
+  [thesis defense](/assets/MUSTY_THESIS_DEFENSE.pdf)
+  <br>
+  [github](https://github.com/michaelmusty/2groupdessins)
   <br>
   [dessin-explorer.org](https://dessin-explorer.org)
+  <br>
+  [jigglegraph](https://math.dartmouth.edu/~mjmusty/32.html)
+  <br>
+  [nonheirarchicaljigglegraph](https://math.dartmouth.edu/~mjmusty/32nh.html)
   <br>
   [arXiv (in progress)]()
 
