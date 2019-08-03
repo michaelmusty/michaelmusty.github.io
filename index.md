@@ -20,15 +20,18 @@ nav-order: 1
   </figcaption>
 </figure>
 
-I am currently a Ph.D. candidate at
+I currently have a visiting position at
+[ICERM](https://icerm.brown.edu/programs/sp-f19/).
+
+I received my PhD from
 [Dartmouth College](https://math.dartmouth.edu)
 working under the supervision of
-[John Voight](https://math.dartmouth.edu/~jvoight)
+[John Voight](https://math.dartmouth.edu/~jvoight).
 
 Here is an updated version of my resume:
 <br>
 <!-- [Resume](https://www.dropbox.com/s/cn1q5q8ft6cpt04/musty_resume.pdf?dl=0){:class="btn btn--gray center"} -->
-[Resume](assets/musty_resume.pdf){:class="btn btn--gray center"}
+[Resume](assets/MichaelMusty.pdf){:class="btn btn--gray center"}
 
 Here is a poster describing some of my research:
 <br>
@@ -37,6 +40,8 @@ Here is a poster describing some of my research:
 I have organized some of my research data at:
 <br>
 [dessin explorer](https://dessin-explorer.org){:class="btn btn--gray"}
+<br>
+[jiggle graph](https://math.dartmouth.edu/~mjmusty/32.html){:class="btn btn--gray"}
 
 Here are some of my professional academic resources:
 <br>
@@ -46,7 +51,6 @@ Here are some of my professional academic resources:
 <br>
 [Publication List](https://www.dropbox.com/s/h51dqlbnkjupb57/musty_publication_list.pdf?dl=0){:class="btn btn--gray"}
 
-I am also passionate about math visualizations and art.
 Here is a mathematical coloring book I made a couple years ago:
 <br>
 [cover](assets/cover.pdf){:class="btn btn--gray"}
