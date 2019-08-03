@@ -56,6 +56,6 @@ Here is a mathematical coloring book I made a couple years ago:
 [cover](assets/cover.pdf){:class="btn btn--gray"}
 [pages](assets/pages.pdf){:class="btn btn--gray"}
 
-Slides for my talk at the JMM January 19, 2019:
-<br>
-[JMM Slides](https://www.dropbox.com/s/5fdidyq7qshn6s9/musty_jmm.pdf?dl=0){:class="btn btn--gray"}
+/* Slides for my talk at the JMM January 19, 2019: */
+/* <br> */
+/* [JMM Slides](https://www.dropbox.com/s/5fdidyq7qshn6s9/musty_jmm.pdf?dl=0){:class="btn btn--gray"} */
