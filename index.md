@@ -20,6 +20,8 @@ nav-order: 1
   </figcaption>
 </figure>
 
+[plea for help](assets/quick_dessin.pdf)
+
 I currently have a visiting position at
 [ICERM](https://icerm.brown.edu/programs/sp-f19/).
 
