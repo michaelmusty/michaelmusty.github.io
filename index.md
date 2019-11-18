@@ -20,6 +20,11 @@ nav-order: 1
   </figcaption>
 </figure>
 
+Some group theory stuff:
+[sage functions](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/enumerate_permutation_triples.sage?viewer=share)
+[sage script](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/script.sage?viewer=share)
+[terminal](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/musty.term?viewer=share)
+
 I currently have a visiting position at
 [ICERM](https://icerm.brown.edu/programs/sp-f19/).
 
