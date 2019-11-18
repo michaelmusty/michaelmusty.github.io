@@ -22,7 +22,9 @@ nav-order: 1
 
 Some group theory stuff:
 [sage functions](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/enumerate_permutation_triples.sage?viewer=share)
+<br>
 [sage script](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/script.sage?viewer=share)
+<br>
 [terminal](https://cocalc.com/share/0eb16995-1a63-45c1-a392-dc9e03352c90/musty.term?viewer=share)
 
 I currently have a visiting position at
