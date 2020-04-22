@@ -20,7 +20,7 @@ nav-order: 1
   </figcaption>
 </figure>
 
-I currently at ERDC-CRREL in Hanover New Hampshire
+I am currently at ERDC-CRREL in Hanover New Hampshire
 teleworking indefinitely.
 
 Previously I was at
