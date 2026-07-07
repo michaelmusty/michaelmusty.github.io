@@ -1,0 +1,157 @@
+/* Michael Musty — minimal academic site
+   Inspired by edgarcosta.org. Server-rendered from _data/*.yml. */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --faint: #999;
+  --link: #0b62c4;
+  --link-hover: #094a96;
+  --rule: #e6e6e6;
+  --chip-bg: #f4f5f7;
+  --chip-hover: #e6e8eb;
+  --accent: #0b62c4;
+  --max: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e6e6;
+    --muted: #a3a3a3;
+    --faint: #7a7a7a;
+    --link: #6bb0ff;
+    --link-hover: #9ccaff;
+    --rule: #2a2a2a;
+    --chip-bg: #1c1f24;
+    --chip-hover: #2a2f36;
+    --accent: #6bb0ff;
+  }
+  body { background: #121316; }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Masthead + nav */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-title { font-weight: 700; font-size: 1.05rem; color: var(--text); }
+.site-title:hover { text-decoration: none; color: var(--accent); }
+nav a {
+  color: var(--muted);
+  margin-left: 1.1rem;
+  font-size: 0.95rem;
+}
+nav a:first-child { margin-left: 0; }
+nav a:hover { color: var(--text); text-decoration: none; }
+nav a.active { color: var(--text); font-weight: 600; }
+
+/* Headings */
+h1 { font-size: 1.9rem; font-weight: 600; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.25rem; font-weight: 600; margin: 2.25rem 0 1rem; }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+p { margin-bottom: 1rem; }
+ul { margin: 0 0 1rem 1.25rem; }
+li { margin-bottom: 0.4rem; }
+
+.lead { font-size: 1.05rem; color: var(--text); }
+.muted { color: var(--muted); }
+.section-rule { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+/* Home intro */
+.intro { display: flex; gap: 1.75rem; align-items: flex-start; flex-wrap: wrap; }
+.intro-photo {
+  width: 150px; height: 150px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
+  border: 1px solid var(--rule);
+}
+.intro-body { flex: 1; min-width: 240px; }
+.intro-body h1 { margin-bottom: 0.25rem; }
+.intro-body .role { color: var(--muted); font-size: 1.05rem; margin-bottom: 1rem; }
+
+.profile-links { margin: 0.75rem 0 0; font-size: 0.95rem; }
+.profile-links a { margin-right: 1rem; white-space: nowrap; }
+
+.contact { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
+.contact strong { color: var(--text); font-weight: 600; }
+
+/* Entry lists (research / talks / cv) */
+.entry { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.entry:last-child { border-bottom: none; }
+.entry-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.15rem; }
+.entry-meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 0.4rem; }
+.entry-meta em { font-style: italic; }
+.entry-desc { margin-bottom: 0.5rem; }
+.entry-authors { color: var(--muted); }
+
+/* Link chips */
+.links { margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.links a {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background: var(--chip-bg);
+  color: var(--muted);
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+.links a:hover { background: var(--chip-hover); color: var(--text); text-decoration: none; }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+.badge-progress { background: #fff3cd; color: #7a5c00; }
+.badge-award { background: #e7f1ff; color: #0b4aa2; }
+@media (prefers-color-scheme: dark) {
+  .badge-progress { background: #3a3113; color: #f0d98a; }
+  .badge-award { background: #12365f; color: #a9ccff; }
+}
+
+figure { margin: 1.5rem 0; text-align: center; }
+figure img { max-width: 100%; height: auto; border-radius: 6px; }
+figcaption { color: var(--faint); font-size: 0.85rem; margin-top: 0.5rem; }
+
+/* CV specifics */
+.cv-download { margin: 0.5rem 0 1.5rem; }
+.cv-row { display: flex; justify-content: space-between; gap: 1rem; }
+.cv-row .cv-date { color: var(--muted); font-size: 0.92rem; white-space: nowrap; flex-shrink: 0; }
+.cv-sub { color: var(--muted); font-size: 0.92rem; }
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--faint);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .cv-row { flex-direction: column; }
+  .cv-row .cv-date { }
+}

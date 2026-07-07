@@ -1,0 +1,94 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+
+{% assign cv = site.data.cv %}
+
+<h1>Curriculum Vitae</h1>
+
+<p class="cv-download">
+  <span class="links">
+    <a href="{{ '/assets/cv/musty_cv.pdf' | relative_url }}">Download PDF</a>
+    <a href="{{ '/assets/cv/musty_cv.tex' | relative_url }}">LaTeX source</a>
+  </span>
+</p>
+
+<p class="contact">
+  {% if cv.contact.location %}<strong>{{ cv.contact.location }}</strong> &middot; {% endif %}
+  <a href="mailto:{{ cv.contact.email }}">{{ cv.contact.email }}</a>
+  {% for link in cv.contact.links %} &middot; <a href="{{ link.url }}">{{ link.name }}</a>{% endfor %}
+</p>
+
+<h2>Employment</h2>
+{% for job in cv.employment %}
+<div class="entry">
+  <div class="cv-row">
+    <div class="entry-title">{{ job.role }}</div>
+    <div class="cv-date">{{ job.dates }}</div>
+  </div>
+  <div class="cv-sub">{{ job.org }}{% if job.location %} &middot; {{ job.location }}{% endif %}</div>
+  {% if job.description %}<div class="entry-desc">{{ job.description }}</div>{% endif %}
+</div>
+{% endfor %}
+
+<h2>Education</h2>
+{% for ed in cv.education %}
+<div class="entry">
+  <div class="cv-row">
+    <div class="entry-title">{{ ed.degree }}</div>
+    <div class="cv-date">{{ ed.year }}</div>
+  </div>
+  <div class="cv-sub">{{ ed.org }}{% if ed.location %} &middot; {{ ed.location }}{% endif %}</div>
+  {% if ed.detail %}<div class="entry-desc">{{ ed.detail }}</div>{% endif %}
+</div>
+{% endfor %}
+
+<h2>Awards</h2>
+{% for a in cv.awards %}
+<div class="entry">
+  <div class="cv-row">
+    <div class="entry-title">{{ a.name }}</div>
+    <div class="cv-date">{{ a.year }}</div>
+  </div>
+  <div class="cv-sub">{{ a.org }}</div>
+</div>
+{% endfor %}
+
+<h2>Publications</h2>
+{% for item in site.data.research %}
+<div class="entry">
+  <div class="entry-title">
+    {{ item.title }}
+    {% if item.status == "in-progress" %}<span class="badge badge-progress">in progress</span>{% endif %}
+  </div>
+  <div class="entry-meta">
+    {% if item.authors %}{{ item.authors }}{% endif %}
+    {% if item.authors and item.venue %} &middot; {% endif %}
+    {% if item.venue %}<em>{{ item.venue }}</em>{% endif %}
+    {% if item.year %} &middot; {{ item.year }}{% endif %}
+  </div>
+  {% if item.links %}
+  <div class="links">
+    {% for link in item.links %}<a href="{{ link.url }}">{{ link.name }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+
+<h2>Selected Talks</h2>
+{% for item in site.data.talks %}
+<div class="entry">
+  <div class="cv-row">
+    <div class="entry-title">{{ item.title }}</div>
+    <div class="cv-date">{{ item.year }}</div>
+  </div>
+  <div class="cv-sub">{{ item.event }}{% if item.location %} &middot; {{ item.location }}{% endif %}</div>
+</div>
+{% endfor %}
+
+<h2>Skills</h2>
+{% for s in cv.skills %}
+<p><strong>{{ s.group }}:</strong> {{ s.items }}</p>
+{% endfor %}

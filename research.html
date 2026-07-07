@@ -1,0 +1,36 @@
+---
+layout: default
+title: Research
+permalink: /research/
+math: true
+---
+
+<h1>Research</h1>
+
+<p class="muted">Publications and preprints in computational number theory and related work.</p>
+
+{% for item in site.data.research %}
+<div class="entry">
+  <div class="entry-title">
+    {{ item.title }}
+    {% if item.status == "in-progress" %}<span class="badge badge-progress">in progress</span>{% endif %}
+  </div>
+
+  <div class="entry-meta">
+    {% if item.authors %}{{ item.authors }}{% endif %}
+    {% if item.authors and item.venue %} &middot; {% endif %}
+    {% if item.venue %}<em>{{ item.venue }}</em>{% endif %}
+    {% if item.year %} &middot; {{ item.year }}{% endif %}
+  </div>
+
+  {% if item.description %}<div class="entry-desc">{{ item.description }}</div>{% endif %}
+
+  {% if item.award %}<div class="entry-meta"><span class="badge badge-award">award</span> {{ item.award }}</div>{% endif %}
+
+  {% if item.links %}
+  <div class="links">
+    {% for link in item.links %}<a href="{{ link.url }}">{{ link.name }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}

@@ -1,0 +1,82 @@
+# Curriculum vitae data. The live /cv page renders this, and pulls publications
+# from research.yml and talks from talks.yml so nothing is duplicated.
+# Keep assets/cv/musty_cv.tex in sync when you change substantive entries.
+
+contact:
+  location: "Vermont, USA"
+  email: "michaelmusty@gmail.com"
+  links:
+    - name: "GitHub"
+      url: "https://github.com/michaelmusty"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/mjmusty/"
+    - name: "arXiv"
+      url: "https://arxiv.org/search/math?searchtype=author&query=Musty%2C+M"
+
+# Reverse-chronological. dates is free text; keep it short.
+employment:
+  - role: "Data Scientist / Machine Learning Engineer"
+    org: "Faraday"
+    dates: "2021 – present"
+    description: >-
+      Partner with clients to prototype and build on the Faraday consumer-prediction
+      platform, from technical guidance to custom solutions. Contribute to feature
+      development, research, and implementation across the modeling infrastructure
+      and the API/UI.
+  - role: "Researcher"
+    org: "ERDC-CRREL"
+    location: "Hanover, NH"
+    dates: "2020 – 2021"
+    description: >-
+      Worked primarily on computer-vision projects focused on landmine detection,
+      and supported research publications with statistical modeling and code.
+  - role: "Postdoctoral Researcher"
+    org: "ICERM, Brown University"
+    location: "Providence, RI"
+    dates: "2019"
+    description: >-
+      Semester program on arithmetic geometry, number theory, and computation.
+  - role: "Graduate Research & Teaching Assistant"
+    org: "Dartmouth College"
+    location: "Hanover, NH"
+    dates: "2014 – 2019"
+  - role: "Graduate Research & Teaching Assistant"
+    org: "University of Vermont"
+    location: "Burlington, VT"
+    dates: "2012 – 2014"
+  - role: "Lecturer"
+    org: "Norwich University"
+    location: "Northfield, VT"
+    dates: "2011 – 2013"
+  - role: "Graduate Research & Teaching Assistant"
+    org: "McGill University"
+    location: "Montréal, QC"
+    dates: "2008 – 2009"
+
+education:
+  - degree: "Ph.D. in Mathematics"
+    org: "Dartmouth College"
+    location: "Hanover, NH"
+    year: 2019
+    detail: "Advisor: John Voight. Dissertation: 2-Group Belyi Maps."
+  - degree: "M.S. in Mathematics"
+    org: "University of Vermont"
+    location: "Burlington, VT"
+    year: 2014
+    detail: "Advisor: Jonathan Sands. Dissertation: Computing Iwasawa λ-invariants."
+  - degree: "B.A. in Mathematics & Scientific Computing"
+    org: "Boston College"
+    location: "Chestnut Hill, MA"
+    year: 2008
+
+awards:
+  - name: "Selfridge Prize in Number Theory"
+    org: "Number Theory Foundation (awarded at ANTS-XIII)"
+    year: 2018
+
+# Freeform — edit to taste.
+skills:
+  - group: "Programming & tools"
+    items: "Python, R, Magma, SageMath, SQL, Git, LaTeX"
+  - group: "Data science & math"
+    items: "Machine learning, statistical modeling, computer vision, computational number theory"

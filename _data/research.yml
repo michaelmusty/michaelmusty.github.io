@@ -1,0 +1,75 @@
+# Research output. Add a paper by appending an entry here — the Research page
+# renders it automatically. Fields: title, authors, venue, year, description,
+# status ("in-progress" shows a badge), award, links: [{name, url}].
+
+- title: "2-Group Belyi Maps"
+  venue: "Ph.D. thesis, Dartmouth College"
+  year: 2019
+  description: >-
+    Galois Belyi maps with monodromy group a 2-group. Develops computational
+    methods to enumerate and study their structure.
+  award: "Selfridge Prize (for the related database paper)"
+  links:
+    - name: "Thesis"
+      url: "/assets/musty_thesis_final.pdf"
+    - name: "Defense slides"
+      url: "/assets/MUSTY_THESIS_DEFENSE.pdf"
+    - name: "GitHub"
+      url: "https://github.com/michaelmusty/2groupdessins"
+    - name: "Dessin Explorer"
+      url: "https://dessin-explorer.org"
+
+- title: "Computing Canonical Rings of Hilbert Modular Forms"
+  authors: "with the Hilbert modular forms collaboration"
+  status: "in-progress"
+  year: 2023
+  description: >-
+    Part of a large collaborative effort to compute canonical rings of Hilbert
+    modular forms. Contributed the data structures for storing and computing
+    with Fourier expansions of Hilbert modular forms.
+  links:
+    - name: "GitHub"
+      url: "https://github.com/edgarcosta/hilbertmodularforms"
+
+- title: "A Database of Belyi Maps"
+  authors: "with Sam Schiavone, Jeroen Sijsling, and John Voight"
+  venue: "Proc. ANTS-XIII, The Open Book Series 2, Mathematical Sciences Publishers"
+  year: 2019
+  award: "Selfridge Prize in Number Theory (ANTS-XIII)"
+  description: >-
+    Computes a database of thousands of Belyi maps up to degree 9. Implemented
+    the Magma database backend and helped migrate the data into the LMFDB.
+  links:
+    - name: "Article"
+      url: "https://msp.org/obs/2019/2-1/p23.xhtml"
+    - name: "arXiv"
+      url: "https://arxiv.org/abs/1805.07751"
+    - name: "GitHub"
+      url: "https://github.com/michaelmusty/BelyiDB"
+    - name: "LMFDB"
+      url: "https://www.lmfdb.org/Belyi"
+
+- title: "Understanding the cost of dermatologic care: a survey study of dermatology providers, residents, and patients"
+  authors: "with A. Steen, J. Mann, V. Carlberg, A. Kimball, and E. Thompson"
+  venue: "Journal of the American Academy of Dermatology 76.4, pp. 609–617, Elsevier"
+  year: 2017
+  description: >-
+    Ran the statistical analysis for the survey results in R and produced Likert-scale
+    visualizations of dermatology care costs.
+  links:
+    - name: "Article"
+      url: "https://www.jaad.org/article/S0190-9622(16)31166-5/fulltext"
+
+- title: "Numerical calculation of three-point branched covers of the projective line"
+  authors: "with Michael Klug, Sam Schiavone, and John Voight"
+  venue: "LMS Journal of Computation and Mathematics 17.1, pp. 379–430, London Mathematical Society"
+  year: 2014
+  description: >-
+    A general numerical method to compute Belyi maps via power series expansions
+    of modular forms. Implemented visualizations of Belyi maps as dessins d'enfants
+    conformally embedded in the hyperbolic unit disk.
+  links:
+    - name: "arXiv"
+      url: "https://arxiv.org/abs/1311.2081"
+    - name: "Article (PDF)"
+      url: "/assets/belyi.pdf"

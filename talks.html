@@ -1,0 +1,25 @@
+---
+layout: default
+title: Talks
+permalink: /talks/
+---
+
+<h1>Talks</h1>
+
+<p class="muted">Selected conference and seminar talks.</p>
+
+{% for item in site.data.talks %}
+<div class="entry">
+  <div class="entry-title">{{ item.title }}</div>
+  <div class="entry-meta">
+    {{ item.event }}
+    {% if item.location %} &middot; {{ item.location }}{% endif %}
+    {% if item.year %} &middot; {{ item.year }}{% endif %}
+  </div>
+  {% if item.links %}
+  <div class="links">
+    {% for link in item.links %}<a href="{{ link.url }}">{{ link.name }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}

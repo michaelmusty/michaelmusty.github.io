@@ -1,10 +1,25 @@
-name: 
-  en: Michael Musty
-description: 
-  en: Number Theory and Computations
-footer:
-  en: made with [polyglot-jekyll](https://github.com/mrzool/polyglot-jekyll)
-exclude: [README.md]
+title: Michael Musty
+tagline: Mathematician & Data Scientist
+description: >-
+  Michael Musty — data scientist and mathematician working on number theory,
+  computation, and machine learning.
+author: Michael Musty
+email: michaelmusty@gmail.com
+url: https://michaelmusty.github.io
+
+# Build settings
 permalink: pretty
-plugins:
-  - jemoji
+markdown: kramdown
+
+# Files Jekyll should not copy into the built site
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "assets/cv/*.aux"
+  - "assets/cv/*.log"
+  - "assets/cv/*.out"
+  - "assets/cv/*.fls"
+  - "assets/cv/*.fdb_latexmk"
