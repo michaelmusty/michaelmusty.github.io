@@ -1,7 +1,8 @@
 # michaelmusty.github.io
 
-Personal academic/professional site for Michael Musty. Minimal Jekyll site —
-GitHub Pages builds it on every push, no CI or client-side JavaScript.
+Personal academic/professional site for Michael Musty, live at
+**<https://michaelmusty.github.io>**. Minimal Jekyll site — GitHub Pages builds
+it on every push, no CI or client-side JavaScript.
 
 ## How it works
 
@@ -52,6 +53,23 @@ bundle exec jekyll serve      # http://localhost:4000
 ```
 
 Requires a Ruby that matches GitHub Pages (Ruby 3 needs the bundled `webrick`
-gem, already in the Gemfile). If your local Ruby toolchain fights you, you can
-skip local preview entirely — pushing to the default branch is enough, GitHub
+gem, already in the Gemfile).
+
+If your local Ruby toolchain fights you, build once and serve the static output
+with anything:
+
+```bash
+jekyll build                              # writes _site/
+python3 -m http.server 4567 -d _site      # http://localhost:4567
+```
+
+Or skip local preview entirely — pushing to the default branch is enough, GitHub
 builds and deploys it.
+
+## Deployment
+
+GitHub Pages serves this user site from the **default branch** (`master`). Merge
+your working branch into `master` (or push directly) and the live site rebuilds
+automatically within a minute or two — there is no separate deploy step and no
+Actions workflow to maintain. Note that classic GitHub Pages has no per-branch
+preview URLs; use the local preview above to check a branch before merging.
