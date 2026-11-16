@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import portrait from '../assets/portrait.jpg';
+import Publication from '../components/Publication.astro';
+import Row from '../components/Row.astro';
+import Base from '../layouts/Base.astro';
+import { getPublications } from '../lib/publications';
+import { site, years } from '../data/site';
+
+const publications = await getPublications();
+const experience = (await getCollection('experience'))
+  .sort((a, b) => b.data.start - a.data.start)
+  .slice(0, 4);
+---
+
+<Base>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>{site.name}</h1>
+      <p class="hero-role">Data scientist and machine learning engineer. Mathematician.</p>
+      <p>
+        I work at <a href="https://faraday.ai">Faraday</a>, where I help clients prototype and
+        build on our consumer-prediction platform and contribute to the modeling infrastructure
+        behind it.
+      </p>
+      <p>
+        Before that I was a research mathematician. I earned my Ph.D. at Dartmouth with John
+        Voight, working in computational number theory on Belyi maps, dessins d’enfants, and
+        Hilbert modular forms, then held a postdoc at ICERM and did computer-vision research at
+        ERDC-CRREL.
+      </p>
+      <ul class="hero-links">
+        <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+        {site.links.map((l) => <li><a href={l.url}>{l.name}</a></li>)}
+        <li><a href={site.cvPdf}>CV (PDF)</a></li>
+      </ul>
+    </div>
+    <figure class="hero-photo">
+      <Image
+        src={portrait}
+        alt="Portrait of Michael Musty"
+        width={200}
+        height={200}
+        fit="cover"
+        densities={[1, 2]}
+        loading="eager"
+      />
+      <figcaption>Photo: Eva Kłejt</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Publications</h2>
+      <a href="/research/">All research and talks</a>
+    </div>
+    {publications.map((entry) => <Publication entry={entry} compact />)}
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Experience</h2>
+      <a href="/cv/">Full CV</a>
+    </div>
+    {
+      experience.map(({ data: job }) => (
+        <Row
+          title={job.role}
+          sub={[job.org, job.location].filter(Boolean).join(', ')}
+          date={years(job.start, job.end, job.current)}
+        />
+      ))
+    }
+  </section>
+</Base>

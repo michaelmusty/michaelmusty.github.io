@@ -1,0 +1,19 @@
+- id: phd
+  degree: "Ph.D. in Mathematics"
+  org: "Dartmouth College"
+  location: "Hanover, NH"
+  year: 2019
+  detail: "Advisor: John Voight. Dissertation: 2-group Belyi maps."
+
+- id: ms
+  degree: "M.S. in Mathematics"
+  org: "University of Vermont"
+  location: "Burlington, VT"
+  year: 2014
+  detail: "Advisor: Jonathan Sands. Thesis: Computing Iwasawa λ-invariants."
+
+- id: ba
+  degree: "B.A. in Mathematics & Scientific Computing"
+  org: "Boston College"
+  location: "Chestnut Hill, MA"
+  year: 2008

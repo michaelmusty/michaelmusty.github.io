@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+import Row from '../components/Row.astro';
+import Base from '../layouts/Base.astro';
+import { getPublications } from '../lib/publications';
+import { site, years } from '../data/site';
+
+const experience = (await getCollection('experience')).sort((a, b) => b.data.start - a.data.start);
+const education = (await getCollection('education')).sort((a, b) => b.data.year - a.data.year);
+const publications = await getPublications();
+const talks = (await getCollection('talks')).sort((a, b) => b.data.year - a.data.year);
+---
+
+<Base title="CV" description="Curriculum vitae of Michael Musty: employment, education, publications, and talks.">
+  <section class="page-intro">
+    <div>
+      <h1>Curriculum vitae</h1>
+      <p class="item-meta">
+        {site.location} · <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+      <p class="no-print"><a class="button" href={site.cvPdf}>Download PDF</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Employment</h2>
+    {
+      experience.map(({ data: job }) => (
+        <Row
+          title={job.role}
+          sub={[job.org, job.location].filter(Boolean).join(', ')}
+          date={years(job.start, job.end, job.current)}
+        >
+          {job.summary && <p class="item-summary">{job.summary}</p>}
+        </Row>
+      ))
+    }
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    {
+      education.map(({ data: ed }) => (
+        <Row title={ed.degree} sub={[ed.org, ed.location].filter(Boolean).join(', ')} date={ed.year}>
+          {ed.detail && <p class="item-summary">{ed.detail}</p>}
+        </Row>
+      ))
+    }
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    {site.awards.map((a) => <Row title={a.name} sub={a.org} date={a.year} />)}
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    {
+      publications.map(({ data: p }) => (
+        <Row title={p.title} date={p.year}>
+          <p class="item-meta">
+            {p.authors && <span>{p.authors}. </span>}
+            <cite>{p.venue}</cite>.
+          </p>
+        </Row>
+      ))
+    }
+  </section>
+
+  <section>
+    <h2>Talks</h2>
+    {
+      talks.map(({ data: t }) => (
+        <Row title={t.title} sub={[t.event, t.location].filter(Boolean).join(', ')} date={t.year} />
+      ))
+    }
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      {
+        site.skills.map((s) => (
+          <>
+            <dt>{s.group}</dt>
+            <dd>{s.items}</dd>
+          </>
+        ))
+      }
+    </dl>
+  </section>
+</Base>

@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Links from './Links.astro';
+
+interface Props {
+  entry: CollectionEntry<'publications'>;
+  compact?: boolean;
+}
+const { entry, compact = false } = Astro.props;
+const p = entry.data;
+---
+
+<article class="item">
+  <h3 class="item-title">{p.title}</h3>
+  <p class="item-meta">
+    {p.authors && <span>{p.authors}. </span>}
+    <cite>{p.venue}</cite>, {p.year}.
+  </p>
+  {p.award && <p class="item-award">{p.award}</p>}
+  {!compact && <p class="item-summary">{p.summary}</p>}
+  <Links links={p.links} />
+</article>

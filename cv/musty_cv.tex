@@ -1,0 +1,130 @@
+% Michael Musty — Curriculum Vitae
+% Compiles with pdflatex (TeX Live). Keep in sync with _data/cv.yml.
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Section headers with a rule underneath
+\titleformat{\section}{\large\scshape\bfseries}{}{0em}{}[{\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{2.2ex}{1.2ex}
+
+% \cventry{title}{subtitle}{date}
+\newcommand{\cventry}[3]{%
+  \textbf{#1}\hfill #3\par
+  {\itshape #2}\par
+}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\bfseries Michael Musty}\\[0.4em]
+  Vermont, USA \quad$\cdot$\quad
+  \href{mailto:michaelmusty@gmail.com}{michaelmusty@gmail.com}\\[0.2em]
+  \href{https://github.com/michaelmusty}{github.com/michaelmusty} \quad$\cdot$\quad
+  \href{https://www.linkedin.com/in/mjmusty/}{linkedin.com/in/mjmusty} \quad$\cdot$\quad
+  \href{https://michaelmusty.github.io}{michaelmusty.github.io}
+\end{center}
+
+% ---------- Employment ----------
+\section{Employment}
+
+\cventry{Data Scientist / Machine Learning Engineer}{Faraday}{2021 -- present}
+Partner with clients to prototype and build on the Faraday consumer-prediction
+platform, from technical guidance to custom solutions. Contribute to feature
+development, research, and implementation across the modeling infrastructure and
+the API/UI.
+\medskip
+
+\cventry{Researcher}{ERDC-CRREL, Hanover, NH}{2020 -- 2021}
+Computer-vision projects focused on landmine detection; supported research
+publications with statistical modeling and code.
+\medskip
+
+\cventry{Postdoctoral Researcher}{ICERM, Brown University, Providence, RI}{2019}
+Semester program on arithmetic geometry, number theory, and computation.
+\medskip
+
+\cventry{Graduate Research \& Teaching Assistant}{Dartmouth College, Hanover, NH}{2014 -- 2019}
+\medskip
+
+\cventry{Graduate Research \& Teaching Assistant}{University of Vermont, Burlington, VT}{2012 -- 2014}
+\medskip
+
+\cventry{Lecturer}{Norwich University, Northfield, VT}{2011 -- 2013}
+\medskip
+
+\cventry{Graduate Research \& Teaching Assistant}{McGill University, Montr\'eal, QC}{2008 -- 2009}
+
+% ---------- Education ----------
+\section{Education}
+
+\cventry{Ph.D. in Mathematics}{Dartmouth College, Hanover, NH}{2019}
+Advisor: John Voight. Dissertation: \textit{2-Group Belyi Maps}.
+\medskip
+
+\cventry{M.S. in Mathematics}{University of Vermont, Burlington, VT}{2014}
+Advisor: Jonathan Sands. Dissertation: \textit{Computing Iwasawa $\lambda$-invariants}.
+\medskip
+
+\cventry{B.A. in Mathematics \& Scientific Computing}{Boston College, Chestnut Hill, MA}{2008}
+
+% ---------- Awards ----------
+\section{Awards}
+
+\cventry{Selfridge Prize in Number Theory}{Number Theory Foundation (awarded at ANTS-XIII)}{2018}
+
+% ---------- Publications ----------
+\section{Publications}
+
+\textbf{2-Group Belyi Maps.} Ph.D. thesis, Dartmouth College, 2019.
+\medskip
+
+\textbf{Computing Canonical Rings of Hilbert Modular Forms} (in progress). With the
+Hilbert modular forms collaboration.
+\medskip
+
+\textbf{A Database of Belyi Maps.} With S.~Schiavone, J.~Sijsling, and J.~Voight.
+Proc.\ ANTS-XIII, \textit{The Open Book Series} 2, Mathematical Sciences Publishers, 2019.
+\medskip
+
+\textbf{Understanding the cost of dermatologic care.} With A.~Steen, J.~Mann,
+V.~Carlberg, A.~Kimball, and E.~Thompson. \textit{Journal of the American Academy
+of Dermatology} 76.4 (2017), pp.~609--617.
+\medskip
+
+\textbf{Numerical calculation of three-point branched covers of the projective line.}
+With M.~Klug, S.~Schiavone, and J.~Voight. \textit{LMS Journal of Computation and
+Mathematics} 17.1 (2014), pp.~379--430.
+
+% ---------- Talks ----------
+\section{Selected Talks}
+
+\cventry{2-Group Belyi Maps}{JMM Special Session on Number Theory, Arithmetic Geometry, and Computation, Denver, CO}{2020}
+\medskip
+
+\cventry{2-Group Belyi Maps}{Maine--Qu\'ebec Number Theory Conference, Qu\'ebec, Canada}{2019}
+\medskip
+
+\cventry{A Database of Belyi Maps}{Simons Collaboration Meeting, Cambridge, MA}{2018}
+\medskip
+
+\cventry{Computing Iwasawa $\lambda$-invariants}{Dartmouth Number Theory Seminar, Hanover, NH}{2015}
+
+% ---------- Skills ----------
+\section{Skills}
+
+\textbf{Programming \& tools:} Python, R, Magma, SageMath, SQL, Git, \LaTeX.\par
+\textbf{Data science \& math:} Machine learning, statistical modeling, computer
+vision, computational number theory.
+
+\end{document}
