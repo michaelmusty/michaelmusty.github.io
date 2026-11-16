@@ -1,0 +1,33 @@
+# Software, collaborations and expository work that are not papers.
+# Fields: id, title, order (lower shows first), meta, summary, links.
+
+- id: hilbert-modular-forms
+  title: "Hilbert modular forms"
+  order: 1
+  meta: "Magma package, ten-person collaboration"
+  summary: >-
+    Part of a team implementing methods to compute canonical rings of Hilbert
+    modular forms. I was responsible for the data structures that store and
+    compute with Fourier expansions of Hilbert modular forms.
+  links:
+    - { name: "Code", url: "https://github.com/edgarcosta/hilbertmodularforms" }
+
+- id: dessins-poster
+  title: "Dessins d'enfants"
+  order: 2
+  meta: "Poster, 2017"
+  summary: >-
+    A general introduction to dessins d'enfants (children's drawings) and
+    their connections to number theory, geometry, and art.
+  links:
+    - { name: "Poster", url: "/assets/belyi_poster.pdf" }
+
+- id: coloring-book
+  title: "Dessins d'enfants: a mathematical coloring book"
+  order: 3
+  meta: "2015"
+  summary: >-
+    Sixty-eight pages of dessins to color in.
+  links:
+    - { name: "Cover", url: "/assets/cover.pdf" }
+    - { name: "Pages", url: "/assets/pages.pdf" }

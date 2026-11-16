@@ -1,0 +1,61 @@
+# Papers and thesis. Add an entry here and it appears on Home, Research and CV.
+# Fields: id, title, kind (paper | thesis), authors, venue, year, summary, award, links.
+
+- id: belyi-database
+  title: "A database of Belyi maps"
+  kind: paper
+  authors: "with Sam Schiavone, Jeroen Sijsling, and John Voight"
+  venue: "Proceedings of ANTS-XIII, The Open Book Series 2, Mathematical Sciences Publishers"
+  year: 2019
+  award: "Selfridge Prize in Number Theory, ANTS-XIII"
+  summary: >-
+    Computes a database of thousands of Belyi maps up to degree 9. I implemented
+    the database backend in Magma and worked in a team of four to migrate the
+    data into the L-functions and Modular Forms Database (LMFDB).
+  links:
+    - { name: "Article", url: "https://msp.org/obs/2019/2-1/p23.xhtml" }
+    - { name: "arXiv", url: "https://arxiv.org/abs/1805.07751" }
+    - { name: "Code", url: "https://github.com/michaelmusty/BelyiDB" }
+    - { name: "LMFDB", url: "https://www.lmfdb.org/Belyi/" }
+
+- id: two-group-belyi-maps
+  title: "2-group Belyi maps"
+  kind: thesis
+  venue: "Ph.D. thesis, Dartmouth College"
+  year: 2019
+  summary: >-
+    A study of Galois Belyi maps whose monodromy group is a 2-group, with
+    algorithms to enumerate and compute them.
+  links:
+    - { name: "Thesis", url: "/assets/musty_thesis_final.pdf" }
+    - { name: "Defense slides", url: "/assets/MUSTY_THESIS_DEFENSE.pdf" }
+    - { name: "Code", url: "https://github.com/michaelmusty/2groupdessins" }
+
+- id: cost-of-dermatologic-care
+  title: "Understanding the cost of dermatologic care: a survey study of dermatology providers, residents, and patients"
+  kind: paper
+  authors: "with Aaron Steen, Julianne Mann, Valerie Carlberg, Alexa Kimball, and Eric Thompson"
+  venue: "Journal of the American Academy of Dermatology 76(4), 609–617"
+  year: 2017
+  summary: >-
+    I ran the statistical analysis of the survey results in R and produced the
+    Likert-scale visualizations used to interpret them.
+  links:
+    - { name: "Article", url: "https://www.jaad.org/article/S0190-9622(16)31166-5/fulltext" }
+    - { name: "cost.R", url: "/assets/cost.R" }
+    - { name: "providers.R", url: "/assets/providers.R" }
+    - { name: "residents.R", url: "/assets/residents.R" }
+
+- id: three-point-branched-covers
+  title: "Numerical calculation of three-point branched covers of the projective line"
+  kind: paper
+  authors: "with Michael Klug, Sam Schiavone, and John Voight"
+  venue: "LMS Journal of Computation and Mathematics 17(1), 379–430"
+  year: 2014
+  summary: >-
+    A general numerical method for computing Belyi maps from power series
+    expansions of modular forms. I wrote the code that draws Belyi maps as
+    dessins d'enfants conformally embedded in the hyperbolic unit disk.
+  links:
+    - { name: "arXiv", url: "https://arxiv.org/abs/1311.2081" }
+    - { name: "PDF", url: "/assets/belyi.pdf" }

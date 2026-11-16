@@ -1,0 +1,18 @@
+---
+// A dated row: title and detail on the left, date on the right.
+interface Props {
+  title: string;
+  sub?: string;
+  date: string | number;
+}
+const { title, sub, date } = Astro.props;
+---
+
+<div class="row">
+  <div class="row-main">
+    <h3 class="item-title">{title}</h3>
+    {sub && <p class="item-meta">{sub}</p>}
+    <slot />
+  </div>
+  <p class="row-date">{date}</p>
+</div>

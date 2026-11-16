@@ -1,0 +1,39 @@
+# Fields: id, title, event, location, year, links.
+
+- id: jmm-2020
+  title: "2-group Belyi maps"
+  event: "Joint Mathematics Meetings, Special Session on Number Theory, Arithmetic Geometry, and Computation"
+  location: "Denver, CO"
+  year: 2020
+  links:
+    - { name: "Abstract", url: "https://jointmathematicsmeetings.org/amsmtgs/2217_abstracts/1145-11-2469.pdf" }
+
+- id: thesis-defense-2019
+  title: "2-group Belyi maps"
+  event: "Thesis defense, Dartmouth College"
+  location: "Hanover, NH"
+  year: 2019
+  links:
+    - { name: "Slides", url: "/assets/MUSTY_THESIS_DEFENSE.pdf" }
+
+- id: simons-2018
+  title: "A database of Belyi maps"
+  event: "Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation"
+  location: "Cambridge, MA"
+  year: 2018
+  links:
+    - { name: "Slides", url: "https://math.mit.edu/~drew/2018Conference/SlidesMusty.pdf" }
+
+- id: maine-quebec-2017
+  title: "2-solvable Belyi maps"
+  event: "Maine–Québec Number Theory Conference"
+  location: "Québec, QC"
+  year: 2017
+  links:
+    - { name: "Slides", url: "/assets/maine-quebec.pdf" }
+
+- id: dartmouth-nt-2015
+  title: "Computing Iwasawa λ-invariants"
+  event: "Dartmouth Number Theory Seminar"
+  location: "Hanover, NH"
+  year: 2015

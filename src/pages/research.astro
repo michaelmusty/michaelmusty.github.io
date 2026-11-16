@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import dessin from '../assets/dessin.png';
+import Links from '../components/Links.astro';
+import Publication from '../components/Publication.astro';
+import Row from '../components/Row.astro';
+import Base from '../layouts/Base.astro';
+import { getPublications } from '../lib/publications';
+
+const publications = await getPublications();
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const talks = (await getCollection('talks')).sort((a, b) => b.data.year - a.data.year);
+---
+
+<Base
+  title="Research"
+  description="Publications, software, and talks by Michael Musty in computational number theory: Belyi maps, dessins d'enfants, and Hilbert modular forms."
+>
+  <section class="page-intro">
+    <div>
+      <h1>Research</h1>
+      <p class="lead">
+        My mathematical work is in computational number theory and arithmetic geometry. Most of
+        it concerns Belyi maps: maps from an algebraic curve to the projective line that are
+        branched over only three points. Each one can be drawn as a dessin d’enfant, a graph on
+        a surface, which makes them unusually concrete objects to compute with and catalogue.
+      </p>
+    </div>
+    <figure class="dessin">
+      <Image src={dessin} alt="A dessin d'enfant drawn in the hyperbolic unit disk" width={220} loading="eager" />
+      <figcaption>A genus 1 dessin in the hyperbolic disk</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    {publications.map((entry) => <Publication entry={entry} />)}
+  </section>
+
+  <section>
+    <h2>Software and other work</h2>
+    {
+      projects.map(({ data: p }) => (
+        <article class="item">
+          <h3 class="item-title">{p.title}</h3>
+          {p.meta && <p class="item-meta">{p.meta}</p>}
+          <p class="item-summary">{p.summary}</p>
+          <Links links={p.links} />
+        </article>
+      ))
+    }
+  </section>
+
+  <section>
+    <h2>Talks</h2>
+    {
+      talks.map(({ data: t }) => (
+        <Row
+          title={t.title}
+          sub={[t.event, t.location].filter(Boolean).join(', ')}
+          date={t.year}
+        >
+          <Links links={t.links} />
+        </Row>
+      ))
+    }
+  </section>
+</Base>

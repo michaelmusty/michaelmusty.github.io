@@ -1,0 +1,59 @@
+# Fields: id, role, org, location, start, end (omit when current), current, summary.
+
+- id: faraday
+  role: "Data Scientist / Machine Learning Engineer"
+  org: "Faraday"
+  start: 2021
+  current: true
+  summary: >-
+    Partner with clients to prototype and build on the Faraday
+    consumer-prediction platform, from technical guidance to custom solutions.
+    Contribute to feature development, research, and implementation across the
+    modeling infrastructure and the API and UI.
+
+- id: crrel
+  role: "Researcher"
+  org: "ERDC-CRREL"
+  location: "Hanover, NH"
+  start: 2020
+  end: 2021
+  summary: >-
+    Computer-vision projects focused on landmine detection; supported research
+    publications with statistical modeling and code.
+
+- id: icerm
+  role: "Postdoctoral Researcher"
+  org: "ICERM, Brown University"
+  location: "Providence, RI"
+  start: 2019
+  end: 2019
+  summary: >-
+    Semester program on arithmetic geometry, number theory, and computation.
+
+- id: dartmouth
+  role: "Graduate Research & Teaching Assistant"
+  org: "Dartmouth College"
+  location: "Hanover, NH"
+  start: 2014
+  end: 2019
+
+- id: uvm
+  role: "Graduate Research & Teaching Assistant"
+  org: "University of Vermont"
+  location: "Burlington, VT"
+  start: 2012
+  end: 2014
+
+- id: norwich
+  role: "Lecturer"
+  org: "Norwich University"
+  location: "Northfield, VT"
+  start: 2011
+  end: 2013
+
+- id: mcgill
+  role: "Graduate Research & Teaching Assistant"
+  org: "McGill University"
+  location: "Montréal, QC"
+  start: 2008
+  end: 2009
